@@ -1,0 +1,1 @@
+async function e(e){let t=()=>{location.href=e.href};try{if(!navigator.canShare({files:[new File([``],`q.png`,{type:`image/png`})]}))return t();let n=await(await fetch(new URL(e.dataset.img,location.href))).blob();await navigator.share({files:[new File([n],e.dataset.name,{type:`image/png`})],text:e.dataset.text})}catch(e){e?.name!==`AbortError`&&t()}}export{e as share};

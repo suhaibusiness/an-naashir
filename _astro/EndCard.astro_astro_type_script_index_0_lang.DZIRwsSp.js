@@ -1,0 +1,1 @@
+import{t as e}from"./preload-helper.DygEbaNj.js";var t=new IntersectionObserver(n=>n.forEach(n=>{n.isIntersecting&&(t.unobserve(n.target),e(()=>import(`./endcard.D_GlOUhU.js`).then(e=>e.initCard(n.target)),[]))}),{rootMargin:`400px`});document.querySelectorAll(`.rend`).forEach(e=>t.observe(e));
